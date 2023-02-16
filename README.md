@@ -59,7 +59,7 @@ python -m app.app
 Para executar os testes da applicação gerando arquivos de cobertura de testes tanto para o azure quanto para a pipeline execute o seguinte comando:
 
 ```sh
-pytest --cov=app --cov-report=xml --cov-report=html --nunitxml=reports/nunit/test-output.xml
+pytest --cov=app --cov-report=xml --cov-report=html --nunitxml=reports/nunit/test-output.xml --junitxml=reports/junit/test-output.xml
 ```
 
 ## Execução em produção
