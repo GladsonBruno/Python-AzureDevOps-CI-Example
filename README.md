@@ -5,12 +5,14 @@ Projeto de exemplo criado apenas para fins de exemplificação de automação De
 
 Estará contemplado:
 
-* Scan SonarCloud
-* Teste unitário
-* Code Coverage
-* Build de container
-* Teste de container
-* Pipeline templatizada
+* Scan SonarCloud - OK
+* Teste unitário - OK
+* Code Coverage - OK
+* Build de container - OK
+* Teste de container - OK
+* Pipeline templatizada - OK
+
+Link do projeto template utilizado referenciado neste projeto: [azure-template-pipelines](https://github.com/GladsonBruno/azure-template-pipelines)
 
 # Executando a aplicação
 ## Configurando o VirtualEnv
