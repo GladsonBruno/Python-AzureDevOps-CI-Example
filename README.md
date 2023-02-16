@@ -1,14 +1,18 @@
+[![Build Status](https://gladsonbruno16.visualstudio.com/Portfolio_DevOps/_apis/build/status/Python-AzureDevOps-CI-Example?repoName=GladsonBruno%2FPython-AzureDevOps-CI-Example&branchName=master)](https://gladsonbruno16.visualstudio.com/Portfolio_DevOps/_build/latest?definitionId=9&repoName=GladsonBruno%2FPython-AzureDevOps-CI-Example&branchName=master)
+
 # Visão Geral
 Projeto de exemplo criado apenas para fins de exemplificação de automação DevOps com Azure DevOps.
 
 Estará contemplado:
 
-* Scan SonarCloud
-* Teste unitário
-* Code Coverage
-* Build de container
-* Teste de container
-* Pipeline templatizada
+* Scan SonarCloud - OK
+* Teste unitário - OK
+* Code Coverage - OK
+* Build de container - OK
+* Teste de container - OK
+* Pipeline templatizada - OK
+
+Link do projeto template utilizado referenciado neste projeto: [azure-template-pipelines](https://github.com/GladsonBruno/azure-template-pipelines)
 
 # Executando a aplicação
 ## Configurando o VirtualEnv
@@ -57,7 +61,7 @@ python -m app.app
 Para executar os testes da applicação gerando arquivos de cobertura de testes tanto para o azure quanto para a pipeline execute o seguinte comando:
 
 ```sh
-pytest --cov=app --cov-report=xml --cov-report=html --nunitxml=reports/nunit/test-output.xml
+pytest --cov=app --cov-report=xml --cov-report=html --nunitxml=reports/nunit/test-output.xml --junitxml=reports/junit/test-output.xml
 ```
 
 ## Execução em produção
